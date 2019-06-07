@@ -1,0 +1,189 @@
+body{
+	font: 15px Arial, Helvetica, sans-serif;
+	text-align: justify;
+	padding: 0;
+	margin: 0 auto;
+	background-color: #FFFFF8;
+	box-sizing: border-box;
+}
+
+header{
+	width: 100%;
+}
+
+header #banner{
+	background-color: white;
+	text-align: center;
+	vertical-align: center;
+	margin: 0;
+	padding-right: 0;
+}
+
+#logo{
+	width: 100px;
+}
+
+#pTitle{
+	vertical-align: 100%;
+}
+
+header ul a:hover{
+	color: #e5e3e3;
+	background-color: #037E8C;
+}
+
+header nav{
+	width: 100%;
+	margin-bottom: 0px;
+	background-color: #024959;
+	padding: 0px;
+}
+
+.menu_bar{
+	display: none;
+}
+
+.menu ul{
+	padding: 0px;
+	justify-content: center;
+	display: flex;
+	margin: auto;
+	list-style: none;
+	background-color: #024959;
+}
+
+.menu ul ul{
+	display: none;
+}
+
+header nav ul li a{
+	padding: 20px 30px 20px;
+	color: #fff;
+	display: block;
+	text-decoration: none;
+	font-size: 120%;
+}
+
+.menu a span{
+	margin-left: 10px;
+}
+
+.menu ul li:hover ul{
+	display: block;
+	position: absolute;
+}
+
+ul .menuActual{
+	background-color: #037E8C;
+	font-weight: bold;
+}
+
+#description{
+	float: left;
+	padding: 10px;
+	margin-top: 20px;
+	box-sizing: border-box;
+	background-color: #4C85FF;
+}
+
+#description p{
+	font-family: "antiqua";
+	font-size: 20px;
+	margin: 0;
+}
+
+#mapNavigation{
+	background-color: #45B0FC;
+}
+
+#mapNavigation p{
+	font-size: 30px;
+	text-align: center;
+	font-family: Impact;
+	padding: 30px;
+}
+
+h1{
+	font-family: "Helvetica";
+	font-weight: bold;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.map{
+	text-align: center;
+}
+
+.map img{
+	width: 50%;
+}
+
+iframe{
+	width: 50%;
+	height: 500px;
+	padding: 10px;
+}
+
+footer { 
+    background-color: #2f2f2f; 
+    color: #fff;
+    margin: 0;
+    padding: 30px;
+}
+
+footer p{
+  color: #fff;
+  text-align: center;
+}
+
+#enlace{
+  text-decoration: none;
+  color: #D7FFFC;
+}
+
+@media screen and (max-width: 800px){
+	header nav{
+		width: 40%;
+		height: 100%;
+		left: -100%;
+		margin: 0;
+		position: fixed;
+	}
+
+	#logo{
+		display: none;
+	}
+
+	#pTitle{
+		display: none;
+	}
+
+	.menu ul li:hover ul{
+		display: block;
+		position: relative;
+	}
+
+	.menu ul{
+		display: block;
+	}
+
+	.menu_bar{
+		display: block;
+		width: 100%;
+		background-color: #ccc;
+	}
+
+	.menu_bar .btn-menu{
+		display: block;
+		padding: 10px;
+		background-color: #024959;
+		color: #fff;
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 25px;
+		-webkit-box-sizing: border-box;
+		z-index: 9999;
+	}
+}
+
